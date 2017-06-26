@@ -1,5 +1,9 @@
 var app = angular.module('app', ['ngMessages']);
 
+showMessage= function(){
+    alert('Bla bla');
+}
+
 app.controller('UserCtrl', ['$scope','UserService', function ($scope,UserService) {
 	
 	$scope.submitted = false;
